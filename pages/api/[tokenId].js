@@ -1,6 +1,6 @@
 //need to  be done is making a tokenURI
 // which concat the TokenID and BAseURI
-// BaseURI = "http://localhost:3000/api/"
+// BaseURI = "https://nftui-aman-11.vercel.app/api/"
 //token id = 1
 //tokenURI = http://localhost:3000/api
 

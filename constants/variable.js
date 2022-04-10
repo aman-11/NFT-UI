@@ -1,4 +1,4 @@
-export const NFTContarctAddress = "0xB5b5dFC17D4a1b0CD3dc9bCBA87c5c5213aBB7FF";
+export const NFTContarctAddress = "0xe734Cba7B4A62de30937F8268b463E119d6EE9e5";
 
 export const abi = [
   {
