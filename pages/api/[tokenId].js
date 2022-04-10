@@ -204,5 +204,14 @@ export default function handler(req, res) {
     if (obj) return true;
   });
 
-  const image= ""
+  const image = `ipfs://QmecgHz9dM171cR4JxSaw2B3uzWtQvLYjhBzNZJ3N1EX2c/${
+    Number(tokenId) - 1
+  }.png`;
+
+  return res.status(200).json({
+    name,
+    description,
+    attributes,
+    image,
+  });
 }

@@ -50,7 +50,7 @@ export default function Home() {
       console.error(error);
       return false;
     }
-  }
+  };
 
   const getTotalTokensMinted = async () => {
     try {
