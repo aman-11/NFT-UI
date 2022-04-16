@@ -115,7 +115,7 @@ export default function Home() {
 
       const txn = await cryptoDevsContract.presaleMint({
         value: ethers.utils.parseEther("0.02"),
-        gasLimit: 500000, //0.0005 gwei
+        gasLimit: 10000000, //0.005 gwei
       });
       await txn.wait();
 

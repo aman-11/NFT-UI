@@ -181,28 +181,28 @@ export default function handler(req, res) {
   const name = `Useless Nfts #${tokenId}`;
   const description = "NFT collection for web3 devs";
 
-  const nftObj = nftData[tokenId];
-  // console.log(nftObj);
+  //   const nftObj = nftData[tokenId];
+  //   // console.log(nftObj);
 
-  const sampleAttr = Object.entries(nftObj).map((obj) => {
-    // console.log(obj);
-    if (
-      obj[0] == "Shirt" ||
-      obj[0] == "Fur" ||
-      obj[0] == "Hat" ||
-      obj[0] == "Eyes"
-    ) {
-      const attr = {
-        trait_type: obj[0],
-        value: obj[1],
-      };
-      return attr;
-    }
-  });
+  //   const sampleAttr = Object.entries(nftObj).map((obj) => {
+  //     // console.log(obj);
+  //     if (
+  //       obj[0] == "Shirt" ||
+  //       obj[0] == "Fur" ||
+  //       obj[0] == "Hat" ||
+  //       obj[0] == "Eyes"
+  //     ) {
+  //       const attr = {
+  //         trait_type: obj[0],
+  //         value: obj[1],
+  //       };
+  //       return attr;
+  //     }
+  //   });
 
-  const attributes = sampleAttr.filter((obj) => {
-    if (obj) return true;
-  });
+  //   const attributes = sampleAttr.filter((obj) => {
+  //     if (obj) return true;
+  //   });
 
   const image = `ipfs://QmecgHz9dM171cR4JxSaw2B3uzWtQvLYjhBzNZJ3N1EX2c/${
     Number(tokenId) - 1
@@ -211,7 +211,7 @@ export default function handler(req, res) {
   return res.status(200).json({
     name,
     description,
-    attributes,
+    //attributes,
     image,
   });
 }
